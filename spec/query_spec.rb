@@ -936,7 +936,7 @@ RSpec.describe Graphiti::Query do
 
         context "as boolean" do
           before do
-            params[:links] = "true"
+            params[:links] = true
           end
 
           it { is_expected.to eq(true) }
